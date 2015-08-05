@@ -485,12 +485,12 @@
           <div class="col-lg-8 col-lg-offset-2">
             <!--<p>Lorem ipsum dolor amet, consectetur adipiscing elit. Aenean leo lectus sollicitudin convallis quis.</p>-->
             <!-- Start contact form -->
-            <form id="contactForm" method="post" action="mailto:contact@takedoc.fr?subject=Traitement du formulaire"  enctype="text/plain">
+            <form id="contactForm" method="post" action="http://www.takedoc.fr/mailer/mailer.php">
 
               <label style="display:none;" class="screen-reader-text">Nom</label>
               <input type="text" id="lastName" name="lastName" placeholder="Votre nom" class="contactInput requiredField" id="contactInputName" />
 			  
-			  <label style="display:none;" class="screen-reader-text">Prénom</label>
+	      <label style="display:none;" class="screen-reader-text">Prénom</label>
               <input type="text" id="firstName" name="firstName" placeholder="Prénom" class="contactInput requiredField" id="contactInputName" />
 
               <label style="display:none;" class="screen-reader-text">Email</label> 
@@ -499,8 +499,7 @@
               <label style="display:none;" class="screen-reader-text">Message</label>
               <textarea id="message" name="message" placeholder="Your message" class="contactMessage requiredField"></textarea>
 
-			  <input type="button" name="button" value="Envoyer" class="buttonSmall" onclick="sendMailContact()"/><br/><br/>
-              <input type="submit" name="submit" value="Envoyer" class="buttonSmall" /><br/><br/>
+	      <input type="submit" name="submit" value="Envoyer" class="buttonSmall" /><br/><br/>
               <input type="hidden" name="submitted" id="submitted" value="true" />
 
             </form>
@@ -657,7 +656,8 @@ function sendMailContact() {
 		message: message
 	};
 	
-	confirmSendMailContact();
+	return true;
+	//confirmSendMailContact();
 
 };
 
