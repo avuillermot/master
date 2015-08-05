@@ -1,0 +1,677 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="TakeDoc, singple page mobile app theme.">
+<meta name="keywords" content="TakeDoc, theme, app, single page">
+<meta name="author" content="rype pixel">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<title>TakeDoc | Single Page App Theme</title>
+<script src="js/html5shiv.js"></script>  <!-- support for HTML5 in IE8 -->
+<!-- CSS file links -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" id="styleChange" />
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+<link href="css/lightbox.css" type="text/css" rel="stylesheet" />
+<link href="css/responsive.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<!-- Header Start -->
+     <header class="navbar navbar-default navbar-fixed-top">
+      	<div class="container">
+        	<div class="navbar-header">
+          		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+          		</button>
+          		<a class="navbar-brand" href="#"></a>
+        	</div>
+        	<div class="navbar-collapse collapse">
+          		<ul class="nav navbar-nav navbar-right">
+            		<li class="current"><a href="#sliderAnchor">Accueil</a></li>
+            		<li><a href="#featuresAnchor">Fonctionnalités</a></li>
+            		<li><a href="#screenshotsAnchor">Screenshots</a></li>
+            		<li><a href="#howItWorksAnchor">Comment ?</a></li>
+            		<li><a href="#pricingAnchor">Tarifs</a></li>
+            		<li><a href="#faqAnchor">Faq</a></li>
+            		<!--<li><a href="#ourTeamAnchor">L'équipe</a></li>-->
+            		<li><a href="#contactAnchor" style="padding-right:0px;">Contactez nous</a></li>
+          		</ul>
+        	</div><!--/.navbar-collapse -->
+      </div><!-- END Container -->
+    </header><!-- END Header -->
+
+    <!-- Slider Start -->
+    <a class="anchor" id="sliderAnchor"></a>
+    <section class="jumbotron">
+    	<div class="container">
+
+          <ul class="slides" style="display:none;">
+            <li>
+            <div class="col-lg-6">
+              <img id="iphoneBlack" class="img-responsive" src="images/iphoneBlack.png" alt="iphone" />
+              <img id="iphoneWhite" class="img-responsive" src="images/iphoneWhite.png" alt="iphone" />
+            </div>
+        		<div class="col-lg-6 slideText">
+          		<h1><span>Showcase</span> TakeDoc</h1>
+          		<p>TakeDoc est l' <span>application parfaite</span> pour faciliter la collecte d'information de collaborateurs itinérants.</p><br/>
+          		<a href="#" class="button">&#160;Documentation&#160;&#160;</a>
+      		  </div>
+          </li><!-- END Slide 1 -->
+          <li>
+            <div class="col-lg-6">
+              <img id="ipadWhite" src="images/ipadWhite.png" alt="ipad white" />
+              <img id="ipadBlack" src="images/ipadBlack.png" alt="ipad black" />
+              <img id="iphoneBlackSmall" src="images/iphoneBlackSmall.png" alt="iphone" />
+            </div>
+            <div class="col-lg-5 col-lg-offset-1 slideText">
+              <h1><span>Collecter &amp; traiter</span> de l'information n'a jamais été aussi facile.</h1>
+              <p>Chaque utilisateur disposant d'un smartphone ou d'une tablette est capable de collecter des données pour votre back-office. L'application de gestion permet ensuite
+			  traiter de l'information.</p>
+              <!--<form>
+                <input type="text" name="email" value="Your email" id="emailInputSlider" style="margin-right:0px" /><br/>
+                <input type="submit" name="submit" value="Start Your Free Trial" class="buttonSmall" id="buttonSmallSlider" />
+              </form>-->
+          </div>
+          </li><!-- END Slide 2 -->
+          <li style="text-align:center;">
+            <h1><span>TakeDoc</span></h1>
+            <p>Débuter et&#160;<span>explorer</span> notre solution sur Android</p>
+			<!--<img id="bubbleGraphic" src="images/bubbleGraphic.png" alt="" />-->
+            <!--<ul id="slideThreeList">
+              <li>Collecter</li>
+              <li>Valider</li>
+              <li>Archiver</li>
+            </ul>-->
+          </li>
+        </ul> 
+
+    	</div><!-- END Container -->
+
+      <div class="sliderControls">
+          <span id="slider-prev"></span>
+          <span id="slider-next"></span>
+        </div>
+
+    </section><!-- END Slider -->
+
+    <!-- sub-slider message Start -->
+    <section id="subSliderMessage">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>TakeDoc vous permet de <span>collecter, enrichir</span> et <span>traiter</span> vos documents simplement</h2>
+            <p>Depuis un téléphone portable ou une tablette équipé du système Android. </p>
+          </div>
+        </div>
+      </div><!-- END container -->
+    </section><!-- END Sub-slider message -->
+
+    <!-- Features Start -->
+    <a class="anchor" id="featuresAnchor"></a>
+    <section id="features">
+      <div class="container">
+        <div class="row"><div class="col-lg-12"><h3>Fonctionnalités</h3></div><div class="col-lg-12"><img class="dividerWide" src="images/divider.png" alt=""></div></div>
+        <div class="row">
+          <div class="col-lg-4 featureItem">
+			<div class="featureIcon" id="uploadIcon"></div>
+            <h4>Collecté</h4>
+            <p>Compléter un formulaire métier, photographier un document, joindre un fichier depuis votre téléphone ou un lecteur de carte SD.</p>
+            <!--<p><a class="btn btn-default" href="#">View details &raquo;</a></p>-->
+          </div>
+          <div class="col-lg-4 featureItem">
+            <div class="featureIcon" id="cloudIcon"></div>
+            <h4>Connecté</h4>
+            <p>Envoyer les informations collectées à votre back-office en temps réel.</p>
+            <!--<p><a class="btn btn-default" href="#">View details &raquo;</a></p>-->
+         </div>
+          <div class="col-lg-4 featureItem">
+            <div class="featureIcon" id="gearIcon"></div>
+            <h4>Workflow</h4>
+            <p>Utiliser un workflow adpaté pour chaque type de document permettant une validation par un gestionnaire et/ou un manager.</p>
+            <!--<p><a class="btn btn-default" href="#">View details &raquo;</a></p>-->
+          </div>
+        </div><!-- END Row -->
+        <div class="row">
+          <div class="col-lg-4 featureItem">
+            <div class="featureIcon" id="addUserIcon"></div>
+            <h4>Partagé</h4>
+            <p>Consulter et partager l'intégralité de votre historique en fonction des droits d'accès.</p>
+            <!--<p><a class="btn btn-default" href="#">View details &raquo;</a></p>-->
+          </div>
+          <div class="col-lg-4 featureItem">
+            <div class="featureIcon" id="messageIcon"></div>
+            <h4>Facile</h4>
+            <p>Une interface simple et intuitive permettant de prendre rapidement l'application en main.</p>
+            <!--<p><a class="btn btn-default" href="#">View details &raquo;</a></p>-->
+          </div>
+          <div class="col-lg-4 featureItem">
+            <div class="featureIcon" id="connectIcon"></div>
+            <h4>Ouverte</h4>
+            <p>Une application permettant d'exporter vos données vers vos applications métiers. </p>
+            <!--<p><a class="btn btn-default" href="#">View details &raquo;</a></p>-->
+          </div>
+        </div><!-- END Row -->
+      </div><!-- END Container -->
+    </section><!-- END Features -->
+
+    <!-- Start Screenshots -->
+    <a class="anchor" id="screenshotsAnchor"></a>
+    <section id="screenshots">
+      <div class="container">
+        <div class="row"><div class="col-lg-12"><h3>Une Interface Intuitive</h3></div><div class="col-lg-12"><img class="dividerWide" src="images/divider.png" alt=""></div></div>
+        <div class="row">
+          <div class="col-lg-3">
+              <div class="image">
+              <img src="images/screenshot1.png" class="screenshotImage" alt="placeholder" />
+              <a href="images/screenshot1.png" data-lightbox="screenshot1" title="This is a caption" class="overlay"><img class="linkIcon" src="images/icons/linkIcon.png" alt="" /></a>
+              </div>
+            <h4>Sélectionner</h4>
+            <p>Laissez vous guider par .  </p>
+          </div>
+          <div class="col-lg-3">
+            <div class="image">
+            <img src="images/screenshot2.png" class="screenshotImage" alt="placeholder" />
+            <a href="images/screenshot2.png" data-lightbox="screenshot2" title="This is a caption" class="overlay"><img class="linkIcon" src="images/icons/linkIcon.png" alt="" /></a>
+            </div>
+            <h4>Enrichir</h4>
+            <p>Lorem ipsum leo dolor lectus amet, consectetur adipiscing elit. Aenean quis leo sollicitudin convallis quis eget libero. Aliquam laoreet tellus ut libero semper, egestas velit elit malesuada.  </p>
+          </div>
+          <div class="col-lg-3">
+            <div class="image">
+              <img src="images/screenshot3.png" class="screenshotImage" alt="placeholder" />
+              <a href="images/screenshot3.png" data-lightbox="screenshot3" title="This is a caption" class="overlay"><img class="linkIcon" src="images/icons/linkIcon.png" alt="" /></a>
+            </div>
+            <h4>Valider</h4>
+            <p>Lorem ipsum leo dolor lectus amet, consectetur adipiscing elit. Aenean quis leo sollicitudin convallis quis eget libero. Aliquam laoreet tellus ut libero semper, egestas velit elit malesuada.  </p>
+          </div>
+          <div class="col-lg-3">
+            <div class="image">
+              <img src="images/screenshot4.png" class="screenshotImage" alt="placeholder" />
+              <a href="images/screenshot4.png" data-lightbox="screenshot4" title="This is a caption" class="overlay"><img class="linkIcon" src="images/icons/linkIcon.png" alt="" /></a>
+            </div>
+            <h4>Consulter/Archiver</h4>
+            <p>Lorem ipsum leo dolor lectus amet, consectetur adipiscing elit. Aenean quis leo sollicitudin convallis quis eget libero. Aliquam laoreet tellus ut libero semper, egestas velit elit malesuada.  </p>
+          </div>
+        </div><!-- END Row -->
+      </div><!-- END Container -->
+    </section><!-- END Screenshots -->
+
+    <!-- Start Promo box - hidden -->
+    <!--<section id="promoBox">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Try out the <span>free trial</span> today.</h4>
+            <p>Lorem ipsum dolor ut, consectetur adipiscing. Aenean quis lectus sollicitudin.</p>
+          </div>
+          <div class="col-lg-6">
+            <form name="subscribeForm" id="subscribeForm" action="#" novalidate>
+                  <input type="email" name="email" id="emailInput" placeholder="your email here" value="">
+                  <input type="submit" id="subscribeButton" value="Subscribe">
+            </form>
+          </div>
+        </div><!-- END Row -->
+      </div><!-- END container -->
+    </section>--><!-- END Promo box -->
+
+    <!-- Start How It Works -->
+    <a class="anchor" id="howItWorksAnchor"></a>
+    <section id="howItWorks">
+      <div class="container">
+        <div class="row"><div class="col-lg-12"><h3>Comment fonctionne TakeDoc ?</h3></div><div class="col-lg-12"><img class="dividerWide" src="images/divider.png" alt=""></div></div>
+        <div class="row">
+          <div class="col-lg-6 howItWorksGraphic">
+            <img class="iphoneSmall" src="images/iphoneMagnify.png" alt="iphone" />
+            <img class="dividerHalf" src="images/dividerHalf.png" alt="divider" />
+          </div>
+          <div class="col-lg-6">
+            <h4>Recueillir de l'information <span> partout.</span></h4><br/>
+            <p>Vos collaborateurs itinérants disposent de smartphone. Via TakeDoc, il est désormais possible :</p>
+			<ul>
+				<li>de renseigner des formulaires métiers paramétrables,</li>
+				<li>de joindre des photographies,</li>
+				<li>d'ajouter des documents (PDF, JPG,...),</li>
+				<li>d'aidier à la saisie en prenant en compte tout type de référentiel (client, produit, ....),</li>
+				<li><h4><span>d'envoyer ces données à votre back-office</span></h4></li>
+			</ul>
+          </div>
+        </div><!-- END Row -->
+        <div class="transition1"></div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Traiter <span> selon vos processus et besoins métiers.</span></h4><br/>
+            <p>Les informations recueillies sont ensuite mise à disposition de votre back-office :</p>
+			<ul>
+				<li>le lien entre vos collaborateurs itinérants et votre back-office est en temps réel,</li>
+				<li>les contenus sont aiguillés vers les gestionnaires/managers habilités,</li>
+				<li>des wokflows sécurisent la validation des données,</li>
+				<li><h4><span>l'information peut être exportée vers GED et/ou votre gestion client</span></h4></li>
+			</ul>
+          </div>
+          <div class="col-lg-6 howItWorksGraphic">
+            <img class="iphoneSmall" src="images/iphoneMagnify.png" alt="iphone" />
+            <img class="dividerHalf" src="images/dividerHalf.png" alt="divider" />
+          </div>
+        </div><!-- END Row -->
+        <div class="transition2"></div>
+        <div class="row">
+          <div class="col-lg-6 howItWorksGraphic">
+            <img class="iphoneSmall" src="images/iphoneMagnify.png" alt="iphone" />
+            <img class="dividerHalf" src="images/dividerHalf.png" alt="divider" />
+          </div>
+          <div class="col-lg-6">
+            <h4><span>Consulter</span> et archiver.</h4><br/>
+            <p>L'application de gestion permet :</p>
+			<ul>
+				<li>de rechercher et consulter intuitivement vos données,</li>
+				<li>de partager l'information,</li>
+				<li>des wokflows sécurisent la validation des données,</li>
+				<li><h4><span>l'information peut être exportée vers GED et/ou votre gestion client</span></h4></li>
+			</ul>
+          </div>
+        </div><!-- END Row -->
+      </div><!-- END Container -->
+    </section><!-- END How It Works -->
+
+    <!-- Start Pricing -->
+    <a class="anchor" id="pricingAnchor"></a>
+    <section id="pricing">
+      <div class="container">
+        <div class="row"><div class="col-lg-12"><h3>Tarifs et Options</h3></div><div class="col-lg-12"><img class="dividerWide" src="images/divider.png" alt=""></div></div>
+          <div class="row">
+
+          <div class="col-lg-4">
+            <div class="pricingTable">
+              <div class="pricingHeader"><h1>BASIC</h1></div>
+              <div class="triangleWhite"><img src="images/triangleWhite.png" alt="triangle" /></div>
+              <div class="priceAmount"><h2>€3.00 <br/><span>par mois par utilisateur</span></h2></div>
+              <ul>
+                <li>1 serivice/société</li>
+                <li>3 formulaires métiers</li>
+                <li>5 utilisateurs</li>
+                <li>Maintenance logicielle et correctifs</li>
+                <li>Contact technique</li>
+              </ul>
+              <div class="buttonContainer"><a href="#" class="buttonSmall">Purchase</a></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="pricingTable">
+              <div class="pricingHeader"><h1>STANDARD</h1></div>
+              <div class="triangleWhite"><img src="images/triangleWhite.png" alt="triangle" /></div>
+              <div class="priceAmount"><h2>€8.00 <br/><span>par mois par utilisateur</span></h2></div>
+              <ul>
+                <li>3 serivices/sociétés</li>
+                <li>9 formulaires métiers</li>
+                <li>30 utilisateurs</li>
+                <li>Maintenance logicielle et correctifs</li>
+                <li>Contact technique</li>
+              </ul>
+              <div class="buttonContainer"><a href="#" class="buttonSmall">Purchase</a></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="pricingTable">
+              <div class="pricingHeader"><h1>PREMIUM</h1></div>
+              <div class="triangleWhite"><img src="images/triangleWhite.png" alt="triangle" /></div>
+              <div class="priceAmount"><h2>€14.00 <br/><span>par mois par utilisateur</span></h2></div>
+              <ul>
+				<li>Serivice/société illimité</li>
+                <li>Formulaire illimité</li>
+                <li>Utilisateur illimité</li>
+                <li>Maintenance logicielle et correctifs</li>
+                <li>Contact technique</li>
+              </ul>
+              <div class="buttonContainer"><a href="#" class="buttonSmall">Purchase</a></div>
+            </div>
+          </div>
+
+        </div><!-- END Row -->
+      </div><!-- END Container -->
+    </section><!-- END Pricing -->
+
+    <!-- Start Testimonials - hidden -->
+    <!--<section id="testimonials">
+      <div class="container">
+        <div class="row">
+          <ul class="slides2">
+            <li>
+              <div class="col-lg-2"><img src="images/testimonialImage.png" alt="" /></div>
+              <div class="col-lg-10">
+              <h1><span>"</span>TakeDoc is the most incredible app out there! Lorem ipsum dolor amet, consectetur adipiscing 
+              elit. Aenean leo lectus sollicitudin convallis quis eget libero. Sed non risus eget dolor.</h1>
+              <p><span><a href="#">John Doe</a></span> / Web Developer</p>
+              </div>
+            </li>
+            <li>
+              <div class="col-lg-2"><img src="images/testimonialImage.png" alt="" /></div>
+              <div class="col-lg-10">
+              <h1><span>"</span>TakeDoc is the most incredible app out there! Lorem ipsum dolor amet, consectetur adipiscing 
+              elit. Aenean leo lectus sollicitudin convallis quis eget libero. Sed non risus eget dolor.</h1>
+              <p><span><a href="#">John Anderson</a></span> / Web Designer</p>
+              </div>
+            </li>
+            <li>
+              <div class="col-lg-2"><img src="images/testimonialImage.png" alt="" /></div>
+              <div class="col-lg-10">
+              <h1><span>"</span>TakeDoc is the most incredible app out there! Lorem ipsum dolor amet, consectetur adipiscing 
+              elit. Aenean leo lectus sollicitudin convallis quis eget libero. Sed non risus eget dolor.</h1>
+              <p><span><a href="#">Peter Parker</a></span> / Web Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div><!-- END Row -->
+      </div><!-- END Container -->
+    </section>--><!-- END Testimonials -->
+
+    <!-- Start faq-->
+    <section id="faq">
+      <a class="anchor" id="faqAnchor"></a>
+      <div class="container">
+        <div class="row"><div class="col-lg-12"><h3>Faq</h3></div><div class="col-lg-12"><img class="dividerWide" src="images/divider.png" alt=""></div></div>
+          <div class="row">
+            <div class="col-lg-4">
+              <ul class="tabs">
+                <li><a href="#tab1">Dans quel cas utiliser TakeDoc?</a></li>
+                <li><a href="#tab2">Les processus de validation disponible?</a></li>
+                <li><a href="#tab3">L'application mobile?</a></li>
+                <li><a href="#tab4">L'application de backoffice?</a></li>
+                <li><a href="#tab5">Composant technique?</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-8 tabContent">
+              <div id="tab1">
+                <p><span>What do I need to use TakeDoc?</span><br/><br/> Lorem ipsum dolor amet, consectetur adipiscing elit. Aenean leo lectus sollicitudin 
+                convallis quis eget libero. Aliquam laoreet tellus ut libero semper, egestas velit 
+                malesuada. Sed non risus eget dolor vestibulum ullamcorper. Integer feugiat at massa 
+                sit amet molestie. Sed non risus eget dolor vestibulum ullamcorper. Integer feugiat at massa 
+                sit amet molestie. </p>
+                <p>Fusce varius tincidunt metus ac accumsan. Sed varius pharetra risus 
+                ac scelerisque. Nulla facilisi. Nulla facilisi. Vivamus metus lorem, pellentesque a a
+                ccumsan quis, imperdiet nec quam. </p>
+              </div>
+              <div id="tab2">
+                <p><span>How do I make a payment?</span><br/><br/> Lorem ipsum dolor amet, consectetur adipiscing elit. Aenean leo lectus sollicitudin 
+                convallis quis eget libero. Aliquam laoreet tellus ut libero semper, egestas velit 
+                malesuada. Sed non risus eget dolor vestibulum ullamcorper. Integer feugiat at massa 
+                sit amet molestie.</p>
+              </div>
+              <div id="tab3">
+                <p><span>How can I upgrade my subscription?</span><br/><br/> Lorem ipsum dolor amet, consectetur adipiscing elit. Aenean leo lectus sollicitudin 
+                convallis quis eget libero. Aliquam laoreet tellus ut libero semper, egestas velit 
+                malesuada. Sed non risus eget dolor vestibulum ullamcorper. Integer feugiat at massa 
+                sit amet molestie.</p>
+                <p>Fusce varius tincidunt metus ac accumsan. Sed varius pharetra risus 
+                ac scelerisque. Nulla facilisi. Nulla facilisi. Vivamus metus lorem, pellentesque a a
+                ccumsan quis, imperdiet nec quam. Sed non risus eget dolor vestibulum ullamcorper. 
+                Integer feugiat at massa sit amet molestie. Fusce varius tincidunt metus ac accumsan. 
+                Sed varius pharetra risus ac scelerisque.</p>
+              </div>
+              <div id="tab4">
+                <p><span>How do I cancel my subscription?</span><br/><br/> Lorem ipsum dolor amet, consectetur adipiscing elit. Aenean leo lectus sollicitudin 
+                convallis quis eget libero. Aliquam laoreet tellus ut libero semper, egestas velit 
+                malesuada. Sed non risus eget dolor vestibulum ullamcorper. Integer feugiat at massa 
+                sit amet molestie.</p>
+              </div>
+              <div id="tab5">
+                <p><span>How do I find my friends on TakeDoc?</span><br/><br/> Lorem ipsum dolor amet, consectetur adipiscing elit. Aenean leo lectus sollicitudin 
+                convallis quis eget libero. Aliquam laoreet tellus ut libero semper, egestas velit 
+                malesuada. Sed non risus eget dolor vestibulum ullamcorper. Integer feugiat at massa 
+                sit amet molestie.</p>
+              </div>
+            </div>
+          </div><!-- END Row -->
+      </div><!-- END Container -->
+    </section><!-- END Faq -->
+
+    <!-- Start Our Team -->
+    <!--<section id="ourTeam">
+      <a class="anchor" id="ourTeamAnchor"></a>
+      <div class="container">
+        <div class="row"><div class="col-lg-12"><h3>Notre équipe</h3></div><div class="col-lg-12"><img class="dividerWide" src="images/divider.png" alt=""></div></div>
+        <div class="row">
+          <div class="col-lg-6 teamMemberInfo">
+            <img class="teamImage" src="images/teamImage1.png" alt="" />
+            <div class="col-lg-7 teamText">
+            <h4><span>Alexandre V.</span> / Concepteur</h4>
+            <p>Lorem ipsum dolor non, consectetur adipiscing 
+            elit. Aenean lectus sollicitudin convallis quis 
+            libero. Aliquam laoreet tellus ut libero semper, 
+            egestas velit malesuada. Sed non risus eget 
+            dolor vestibulum ullamcorper. Integer feugiat 
+            massa molestie.</p>
+            <ul class="socialIcons">
+              <li><a href="#" class="fbIcon" target="_blank"></a></li>
+              <li><a href="#" class="twitterIcon" target="_blank"></a></li>
+              <li><a href="#" class="googleIcon" target="_blank"></a></li>
+              <li><a href="#" class="flickrIcon" target="_blank"></a></li>
+            </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 teamMemberInfo">
+            <img class="teamImage" src="images/teamImage2.png" alt="" />
+            <div class="col-lg-7 teamText">
+            <h4><span>Eléonore R.</span> / Admin.</h4>
+            <p>Lorem ipsum dolor non, consectetur adipiscing 
+            elit. Aenean lectus sollicitudin convallis quis 
+            libero. Aliquam laoreet tellus ut libero semper, 
+            egestas velit malesuada. Sed non risus eget 
+            dolor vestibulum ullamcorper. Integer feugiat 
+            massa molestie.</p>
+            <ul class="socialIcons">
+              <li><a href="#" class="fbIcon" target="_blank"></a></li>
+              <li><a href="#" class="twitterIcon" target="_blank"></a></li>
+              <li><a href="#" class="googleIcon" target="_blank"></a></li>
+              <li><a href="#" class="flickrIcon" target="_blank"></a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+    <!-- Start Contact -->
+    <section id="contact">
+      <a class="anchor" id="contactAnchor"></a>
+      <div class="container">
+        <div class="row"><div class="col-lg-12"><h3>Contactez-nous</h3></div></div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <!--<p>Lorem ipsum dolor amet, consectetur adipiscing elit. Aenean leo lectus sollicitudin convallis quis.</p>-->
+            <!-- Start contact form -->
+            <form id="contactForm" method="post" action="mailto:contact@takedoc.fr?subject=Traitement du formulaire"  enctype="text/plain">
+
+              <label style="display:none;" class="screen-reader-text">Nom</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Votre nom" class="contactInput requiredField" id="contactInputName" />
+			  
+			  <label style="display:none;" class="screen-reader-text">Prénom</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Prénom" class="contactInput requiredField" id="contactInputName" />
+
+              <label style="display:none;" class="screen-reader-text">Email</label> 
+              <input type="text" id="email" name="email" placeholder="Your email" class="contactInput requiredField" id="contactInputEmail" style="margin-right:0px" /><br/>
+
+              <label style="display:none;" class="screen-reader-text">Message</label>
+              <textarea id="message" name="message" placeholder="Your message" class="contactMessage requiredField"></textarea>
+
+			  <input type="button" name="button" value="Envoyer" class="buttonSmall" onclick="sendMailContact()"/><br/><br/>
+              <input type="submit" name="submit" value="Envoyer" class="buttonSmall" /><br/><br/>
+              <input type="hidden" name="submitted" id="submitted" value="true" />
+
+            </form>
+            <!-- END Contact form -->
+          </div>
+        </div><!-- END Row -->
+      </div><!-- END Container -->
+    </section><!-- END Contact -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 about">
+            <a href="#" class="logoDark"></a><br/><br/>
+            <!--<p>Lorem ipsum dolor amet, consectetur adipiscing elit. Aenean 
+            leo lectus sollicitudin convallis eget libero. Aliquam laoreet 
+            tellus ut libero semper, egestas velit malesuada. Sed non 
+            risus eget dolor amet vestibulum ullamcorper. Integer feugiat 
+            molestie.</p>
+            <ul class="socialIcons">
+              <li><a href="#" class="fbIcon" target="_blank"></a></li>
+              <li><a href="#" class="twitterIcon" target="_blank"></a></li>
+              <li><a href="#" class="googleIcon" target="_blank"></a></li>
+              <li><a href="#" class="flickrIcon" target="_blank"></a></li>
+            </ul>-->
+          </div>
+          <div class="col-lg-4 twitter">
+            <!--<h4>Latest Tweets</h4>
+            <ul>
+              <li><a href="#">@John Doe</a> Lorem ipsum dolor amet, consectetur adipiscing 
+              elit. Aenean leo lectus sollicitudin eget libero.<br/><span>2 minutes ago</span></li>
+              <li><a href="#">@John Doe</a> Lorem ipsum dolor amet, consectetur adipiscing 
+              elit. Aenean leo lectus sollicitudin eget libero.<br/><span>About an hour ago</span></li>
+            </ul>-->
+          </div>
+          <div class="col-lg-4 contact">
+            <h4>Contact Info</h4>
+            <p>Lorem ipsum dolor amet, consectetur adipiscing ipsum dolor.</p>
+            <ul>
+              <!--<li><img src="images/icons/footerPhone.png" alt="phone icon" />1-123-345-6789</li>-->
+              <li><img src="images/icons/footerPin.png" alt="pin icon" /><a href="#">contact@takedoc.fr</a></li>
+              <li><img src="images/icons/footerMail.png" alt="mail icon" />29 bis, Rue Pierre Brunier, 69300 Caluire et Cuire</li>
+            </ul>
+          </div>
+        </div><!-- END Row -->
+      </div><!-- END Container -->
+    </footer><!-- END Footer -->
+    
+<!-- JavaScript file links -->
+<script src="js/jquery.js"></script>			<!-- Jquery -->
+<script src="js/bootstrap.min.js"></script>		<!-- bootstrap -->
+<script src="js/jquery.bxslider.min.js"></script>  <!-- bxslider -->
+<script src="js/tabs.js"></script> <!-- custom tab script -->
+<script src="js/lightbox-2.6.min.js"></script>  <!-- lightbox -->
+<script src="js/jquery.scrollTo.js"></script>  <!-- scollTo -->
+<script src="js/jquery.nav.js"></script>  <!-- one page nav -->
+<script src="js/respond.js"></script>
+
+<script>
+  "use strict";
+  // ACTIVATE BXSLIDER (for slider section)
+  $(document).ready(function(){
+    $('.slides').fadeIn().bxSlider({
+      auto: true,
+      pager: false,
+      nextSelector: '#slider-next',
+      prevSelector: '#slider-prev',
+      nextText: '<img src="images/nextButton.png" alt="slider next" />',
+      prevText: '<img src="images/prevButton.png" alt="slider prev" />',
+      // triggers slider animations on slide change
+      onSlideBefore: function(){
+        $('.jumbotron img').addClass("fadeInReallyFast"); 
+        $('.jumbotron h1').addClass("fadeInFast");  
+        $('.jumbotron p').addClass("fadeInMed"); 
+        $('.jumbotron .button').addClass("fadeInSlow"); 
+        $('.jumbotron .buttonSmall').addClass("fadeInSlow"); 
+        $('#emailInputSlider').addClass("fadeInSlow"); 
+
+        setTimeout (function(){
+        $('.jumbotron img').removeClass("fadeInReallyFast"); 
+        $('.jumbotron h1').removeClass("fadeInFast");  
+        $('.jumbotron p').removeClass("fadeInMed"); 
+        $('.jumbotron .button').removeClass("fadeInSlow"); 
+        $('.jumbotron .buttonSmall').removeClass("fadeInSlow"); 
+        $('#emailInputSlider').removeClass("fadeInSlow"); 
+        }, 1400);
+      }
+    });
+
+    //Triggers slider animations on page load
+    $(document).ready(function() {
+        $('.jumbotron img').toggleClass("fadeInReallyFast"); 
+        $('.jumbotron h1').toggleClass("fadeInFast"); 
+        $('.jumbotron p').toggleClass("fadeInMed"); 
+        $('.jumbotron .button').toggleClass("fadeInSlow"); 
+        $('.jumbotron .buttonSmall').toggleClass("fadeInSlow"); 
+        $('#emailInputSlider').toggleClass("fadeInSlow"); 
+
+        setTimeout (function(){
+        $('.jumbotron img').removeClass("fadeInReallyFast"); 
+        $('.jumbotron h1').removeClass("fadeInFast");  
+        $('.jumbotron p').removeClass("fadeInMed"); 
+        $('.jumbotron .button').removeClass("fadeInSlow"); 
+        $('.jumbotron .buttonSmall').removeClass("fadeInSlow"); 
+        $('#emailInputSlider').removeClass("fadeInSlow"); 
+        }, 1400);
+    });
+
+    //activate second bxslider (for testimonials section)
+    $('.slides2').bxSlider({
+      auto: true,
+      controls: false
+    });
+    });
+
+
+// ACTIVATE ONE PAGE NAV 
+$(document).ready(function() {
+    $('.nav.navbar-nav.navbar-right').onePageNav();
+});
+</script>
+
+<script>
+"use strict";
+// SCREENSHOT IMAGE HOVERS
+$('.image').mouseover(function()
+{
+    $(".overlay", this).stop(true, true).fadeIn();
+}); 
+
+$('.image').mouseout(function()
+{
+    $(".overlay", this).stop(true, true).fadeOut();
+}); 
+</script>
+
+<script>
+"use strict";
+function sendMailContact() {
+
+	var lastName = $("#lastName").val();
+	var firstName = $("#firstName").val();
+	var email = $("#email").val();
+	var message = $("#message").val();
+	
+	if (email == "");
+	if (lastName == "" && firstName == "");
+	if (message == "");
+
+	var context = {
+		lastName: lastName,
+		firstName: firstName,
+		email: email,
+		message: message
+	};
+	
+	confirmSendMailContact();
+
+};
+
+function confirmSendMailContact() {
+	alert("Merci");
+	clearSendMailContact();
+}
+
+function clearSendMailContact() {
+	$("#lastName").val("");
+	$("#firstName").val("");
+	$("#email").val("");
+	$("#message").val("");
+};
+</script>
+</body>
+</html>
