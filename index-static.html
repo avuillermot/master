@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="TakeDoc, singple page mobile app theme.">
-<meta name="keywords" content="TakeDoc, theme, app, single page">
+<meta name="description" content="TakeDoc, back-office and app.">
+<meta name="keywords" content="TakeDoc, back-office and app">
 <meta name="author" content="rype pixel">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">	
-<title>TakeDoc | Single Page App Theme</title>
+<title>TakeDoc | back-office and app</title>
 <script src="js/html5shiv.js"></script>  <!-- support for HTML5 in IE8 -->
 <!-- CSS file links -->
 <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -57,7 +57,7 @@
             </div>
         		<div class="col-lg-6 slideText">
           		<h1><span>Showcase</span> TakeDoc</h1>
-          		<p>TakeDoc est l' <span>application parfaite</span> pour faciliter la collecte d'information de collaborateurs itinérants.</p><br/>
+          		<p>TakeDoc est l' <span>application parfaite</span> pour faciliter la collecte d'information des collaborateurs itinérants.</p><br/>
           		<a href="#" class="button">&#160;Documentation&#160;&#160;</a>
       		  </div>
           </li><!-- END Slide 1 -->
@@ -225,7 +225,7 @@
         <div class="row"><div class="col-lg-12"><h3>Comment fonctionne TakeDoc ?</h3></div><div class="col-lg-12"><img class="dividerWide" src="images/divider.png" alt=""></div></div>
         <div class="row">
           <div class="col-lg-6 howItWorksGraphic">
-            <img class="iphoneSmall" src="images/iphoneMagnify.png" alt="iphone" />
+            <img class="iphoneSmall" src="images/iphoneMagnify1.png" alt="iphone" />
             <img class="dividerHalf" src="images/dividerHalf.png" alt="divider" />
           </div>
           <div class="col-lg-6">
@@ -253,14 +253,14 @@
 			</ul>
           </div>
           <div class="col-lg-6 howItWorksGraphic">
-            <img class="iphoneSmall" src="images/iphoneMagnify.png" alt="iphone" />
+            <img class="iphoneSmall" src="images/iphoneMagnify2.png" alt="iphone" />
             <img class="dividerHalf" src="images/dividerHalf.png" alt="divider" />
           </div>
         </div><!-- END Row -->
         <div class="transition2"></div>
         <div class="row">
           <div class="col-lg-6 howItWorksGraphic">
-            <img class="iphoneSmall" src="images/iphoneMagnify.png" alt="iphone" />
+            <img class="iphoneSmall" src="images/iphoneMagnify3.png" alt="iphone" />
             <img class="dividerHalf" src="images/dividerHalf.png" alt="divider" />
           </div>
           <div class="col-lg-6">
@@ -490,7 +490,7 @@
               <label style="display:none;" class="screen-reader-text">Nom</label>
               <input type="text" id="lastName" name="lastName" placeholder="Votre nom" class="contactInput requiredField" id="contactInputName" />
 			  
-	      <label style="display:none;" class="screen-reader-text">Prénom</label>
+			  <label style="display:none;" class="screen-reader-text">Prénom</label>
               <input type="text" id="firstName" name="firstName" placeholder="Prénom" class="contactInput requiredField" id="contactInputName" />
 
               <label style="display:none;" class="screen-reader-text">Email</label> 
@@ -499,8 +499,8 @@
               <label style="display:none;" class="screen-reader-text">Message</label>
               <textarea id="message" name="message" placeholder="Your message" class="contactMessage requiredField"></textarea>
 
-	      <input type="submit" name="submit" value="Envoyer" class="buttonSmall" /><br/><br/>
-              <input type="hidden" name="submitted" id="submitted" value="true" />
+			  <input type="submit" onclick="sendMailContact()" name="submit" value="Envoyer" class="buttonSmall" /><br/><br/>
+			  <input type="hidden" name="submitted" id="submitted" value="true" />
 
             </form>
             <!-- END Contact form -->
@@ -645,21 +645,23 @@ function sendMailContact() {
 	var email = $("#email").val();
 	var message = $("#message").val();
 	
-	if (email == "");
-	if (lastName == "" && firstName == "");
-	if (message == "");
+	var ok = true;
+	if (email == "" || lastName == "" || firstName == "" || message == "") 
+		ok = displayErrorContact();
 
-	var context = {
-		lastName: lastName,
-		firstName: firstName,
-		email: email,
-		message: message
-	};
-	
-	return true;
-	//confirmSendMailContact();
-
+	if (ok) {
+		$("#contactForm").submit(function( event ) {
+			/*alert("call");
+			event.preventDefault();*/
+		});
+	}
+    return ok;
 };
+
+function displayErrorContact() {
+	alert("Les champs prénom, nom, email et message sont obligatoire.")
+	return false;
+}
 
 function confirmSendMailContact() {
 	alert("Merci");
