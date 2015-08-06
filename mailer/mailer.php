@@ -2,6 +2,7 @@
 include("class.phpmailer.php");
 include("class.smtp.php");
 date_default_timezone_set("Europe/Paris");
+header('Location: http://www.lemonde.fr/');
  
 $mail             = new PHPMailer();
  
