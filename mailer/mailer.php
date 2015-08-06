@@ -32,7 +32,7 @@ $mail->IsHTML(true); // envoyer au format html, passer a false si en mode texte
 if(!$mail->Send()) {
   echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
-  echo "Le message à bien été envoyé. L'équipe TakeDoc vous remercie.";
+  echo "<script>alert('Le message à bien été envoyé. L'équipe TakeDoc vous remercie.');</script>";
 }
  
 ?>

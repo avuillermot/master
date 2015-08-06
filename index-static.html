@@ -499,7 +499,7 @@
               <label style="display:none;" class="screen-reader-text">Message</label>
               <textarea id="message" name="message" placeholder="Your message" class="contactMessage requiredField"></textarea>
 
-			  <input type="submit" onclick="sendMailContact()" name="submit" value="Envoyer" class="buttonSmall" /><br/><br/>
+			  <input type="submit" onclick="return sendMailContact()" name="submit" value="Envoyer" class="buttonSmall" /><br/><br/>
 			  <input type="hidden" name="submitted" id="submitted" value="true" />
 
             </form>
@@ -651,8 +651,8 @@ function sendMailContact() {
 
 	if (ok) {
 		$("#contactForm").submit(function( event ) {
-			/*alert("call");
-			event.preventDefault();*/
+			alert("Le message à bien été envoyé. L'équipe TakeDoc vous remercie.");
+			//event.preventDefault();
 		});
 	}
     return ok;
