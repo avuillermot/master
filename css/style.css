@@ -178,6 +178,7 @@ a:focus {outline:none;}
 	margin-left:20px;
 	padding-left:0px;
 	width:153px;
+	height: 90px;
 }
 
 .nav.navbar-nav.navbar-right li.current a {
@@ -842,6 +843,7 @@ footer {
 	width:155px;
 	height:29px;
 	margin-bottom:-25px;
+	height: 62px;
 }
 
 .col-lg-4.about, .col-lg-4.twitter, .col-lg-4.contact {
