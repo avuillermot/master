@@ -2,7 +2,7 @@
 include("class.phpmailer.php");
 include("class.smtp.php");
 date_default_timezone_set("Europe/Paris");
-header('Location: http://www.lequipe.fr/');
+header('Location: http://www.takedoc.fr/');
 
 $link = mysql_connect("localhost", "uillH_takedocfr", "Cam31122010") or die("Impossible de se connecter : " . mysql_error());
 mysql_select_db('uillhot84013com22148_takedocfr',$link); 

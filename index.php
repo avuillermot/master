@@ -32,10 +32,11 @@
         	<div class="navbar-collapse collapse" style="padding-bottom:0px">
           		<ul class="nav navbar-nav navbar-right">
             		<li class="current"><a href="#sliderAnchor">Accueil</a></li>
+					<li><a href="#useCase">Cas d'usage</a></li>
             		<li><a href="#featuresAnchor">Fonctionnalités</a></li>
             		<li><a href="#screenshotsAnchor">Nos Valeurs</a></li>
             		<li><a href="#howItWorksAnchor">Comment ?</a></li>
-					<!--<li><a href="#pricingAnchor">Tarifs</a></li>-->
+					<li><a href="#pricingAnchor">Tarifs</a></li>
             		<li><a href="#faqAnchor">Faq</a></li>
 					<li><a href="#contactAnchor" style="padding-right:0px;">Contactez nous</a></li>
             		<!--<li><a href="#ourTeamAnchor">L'équipe</a></li>-->
@@ -110,6 +111,31 @@
         </div>
       </div><!-- END container -->
     </section><!-- END Sub-slider message -->
+	
+	 <!-- Start Testimonials -->
+    <section id="useCase">
+      <div class="container">
+		<div class="row"><div class="col-lg-12"><h3>Cas d'usage</h3></div><div class="col-lg-12"><img class="dividerWide" src="images/divider.png" alt=""></div></div>
+        <div class="row">
+ 			  <h4>Optimiser votre organisation commerciale</h4>
+              <p>La mission de vos commerciaux consiste à s’assurer d’un bon référencement des produits en magasins, 
+			  d’avoir un suivi sur le terrain, des fréquences de visites, des relevés linéaires et des prises de commandes.<br/>
+			  Décidez donc de migrer vers des terminaux Android avec l’aide de TakeDoc afin de les doter d’applications et d’outils mobiles 
+			  plus sophistiqués : capables de prendre des photos de bonne facture et d'assurer un reporting opérationnel. <br/>
+			  Le module de gestion des plannings permet également de visualiser les plages de disponibilité.</p>
+
+			  <h4>Améliorer votre gestion commerciale</h4>
+              <p>Votre système de saisie des commandes par bordereaux papier est devenu une charge qui pénalise la gestion commerciale de l'entreprise.<br/>
+				Vos commerciaux ont l’habitude d’établir leurs bons de commandes papier en fin de semaine / mois.<br/>
+				Résultat, les commandes arrivent toutes en même temps pour la saisie, le traitement, … autant d’étapes qui allongent vos délais 
+				entre la prise de commande et la livraison et qui multiplient les risques d’erreurs.<br/>
+				Décidez donc de migrer vers une solution mobile sur laquelle ils enregistrent les données de leurs commandes (client, référence article, quantité, prix, etc..)
+				qui sont transmises en temps réel au siège.</p>
+
+  
+        </div><!-- END Row -->
+      </div><!-- END Container -->
+    </section><!-- END Testimonials -->
 
     <!-- Features Start -->
     <a class="anchor" id="featuresAnchor"></a>
@@ -159,7 +185,6 @@
           </div>
         </div><!-- END Row -->
       </div><!-- END Container -->
-    </section><!-- END Features -->
 
     <!-- Start Screenshots -->
     <a class="anchor" id="screenshotsAnchor"></a>
@@ -236,10 +261,10 @@
             <p>Lors d'une intervention en clientèle, votre collaborateur sélectionne le type de document correspondant à sa visite.</p>
 			<p>En fonction du paramétrage que vous avez déifni, votre collaborateur :</p>
 			<ul style="padding-left:15px">
-				<li>Compléte les champs nécessaires,</li>
+				<li>Complète les champs nécessaires,</li>
 				<li>Prend des photographies,</li>
 				<li>Joint un fichier (PDF, image, ....),</li>
-				<li>Utilise votre référentiel (client, produit, partenaire) pour faciliter l'exploitation de l'information,</li>
+				<li>Utilise votre référentiel (client, produit, partenaire) pour faciliter l'exploitation de l'information.</li>
 			</ul>
           </div>
         </div><!-- END Row -->
@@ -250,15 +275,15 @@
         <div class="row">
           <div class="col-lg-6">
             <h4>Traiter <span> selon vos processus et besoins métiers.</span></h4><br/>
-            <p>Les informations recueillies sont ensuite mise à disposition de votre back-office.</p><p>Vos gestionnaires :</p>
+            <p>Les informations recueillies sont ensuite mises à disposition de votre back-office.</p><p>Vos gestionnaires :</p>
 			<ul style="padding-left:15px">
 				<li>Contrôlent les données fournies,</li>
 				<li>Suivent les workflows de validation définis,</li>
 			</ul>
 			<p></p>
 			<ul>Les contenus sont :</ul>
-				<li>aiguillés vers les gestionnaires/managers habilités,</li>
-				<li>exportés vers votre CRM, GED, ERP en temps réel</li>
+				<li>Aiguillés vers les gestionnaires / managers habilités,</li>
+				<li>Exportés vers votre CRM, GED, ERP en temps réel.</li>
 			</ul>
           </div>
           <div class="col-lg-6 howItWorksGraphic">
@@ -280,7 +305,7 @@
 			<ul style="padding-left:15px">
 				<li>Les documents sont partagés en fonction des droits d'accès prédéfinis,</li>
 				<li>Gérez des contenus et non des fichiers,</li>
-				<li>Utiliser un moteur de recherche rapide,</li>
+				<li>Utiliser un moteur de recherche rapide.</li>
 			</ul>
           </div>
         </div><!-- END Row -->
@@ -288,32 +313,34 @@
 		
 		<div class="transition1"></div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 ">
             <h4><span>Planifier</span> et organiser.</h4><br/>
             <p>Organiser et optimiser vos tournées.</p>
 			<ul style="padding-left:15px">
 				<li>Vos gestionnaires organisent les rendez-vous,</li>
 				<li>La prise de rendez-vous prépare les formulaires métiers requis,</li>
-				<li>Vos collaborateurs itinérants sont informés en temps réel,</li>
+				<li>Vos collaborateurs itinérants sont informés en temps réel.</li>
 			</ul>
           </div>
-		  <div class="col-lg-4 howItWorksGraphic">
-            <img src="images/planning.png" alt="iphone" />
+		  <div class="col-lg-6 howItWorksGraphic">
+            <img class="iphoneSmall" src="images/planning.png" alt="iphone" />
             <img class="dividerHalf" src="images/dividerHalf.png" alt="divider" />
           </div>
         </div><!-- END Row -->
       </div><!-- END Container -->
+	  
+	  
     </section><!-- END How It Works -->
 
     <!-- Start Pricing -->
-    <!--<a class="anchor" id="pricingAnchor"></a>
+    <a class="anchor" id="pricingAnchor"></a>
     <section id="pricing">
       <div class="container">
         <div class="row"><div class="col-lg-12"><h3>Tarifs et Options</h3></div><div class="col-lg-12"><img class="dividerWide" src="images/divider.png" alt=""></div></div>
           <div class="row">
 
           <div class="col-lg-4">
-            <div class="pricingTable">
+            <!--<div class="pricingTable">
               <div class="pricingHeader"><h1>MONO</h1></div>
               <div class="triangleWhite"><img src="images/triangleWhite.png" alt="triangle" /></div>
               <div class="priceAmount"><h2>€20.00 <br/><span>par mois par utilisateur</span></h2></div>
@@ -324,27 +351,26 @@
                 <li>Maintenance logicielle et correctifs</li>
               </ul>
               <div class="buttonContainer"><a href="#" class="buttonSmall">Purchase</a></div>
-            </div>
+            </div>-->
           </div>
-		  <div class="col-lg-4">
-		  </div>
+
           <div class="col-lg-4">
             <div class="pricingTable">
               <div class="pricingHeader"><h1>STANDARD</h1></div>
               <div class="triangleWhite"><img src="images/triangleWhite.png" alt="triangle" /></div>
               <div class="priceAmount"><h2>€8.00 <br/><span>par mois par utilisateur</span></h2></div>
               <ul>
-                <li>3 services/sociétés</li>
-                <li>9 formulaires métiers</li>
+                <li>Hors frais d'hébergement</li>
+                <!--<li>9 formulaires métiers</li>
                 <li>De 2 à 15 utilisateurs</li>
-                <li>Maintenance logicielle et correctifs</li>
+                <li>Maintenance logicielle et correctifs</li>-->
               </ul>
-              <div class="buttonContainer"><a href="#" class="buttonSmall">Purchase</a></div>
+              <div class="buttonContainer"><a href="#" class="buttonSmall">Purchase</a></div>-->
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="pricingTable">
+            <!--<div class="pricingTable">
               <div class="pricingHeader"><h1>STANDARD</h1></div>
               <div class="triangleWhite"><img src="images/triangleWhite.png" alt="triangle" /></div>
               <div class="priceAmount"><h2>€14.00 <br/><span>par mois par utilisateur</span></h2></div>
@@ -355,46 +381,12 @@
                 <li>Maintenance logicielle et correctifs</li>
               </ul>
               <div class="buttonContainer"><a href="#" class="buttonSmall">Purchase</a></div>
-            </div>
+            </div>-->
           </div>
 
         </div>
       </div>
-    </section>-->
-
-    <!-- Start Testimonials - hidden -->
-    <!--<section id="testimonials">
-      <div class="container">
-        <div class="row">
-          <ul class="slides2">
-            <li>
-              <div class="col-lg-2"><img src="images/testimonialImage.png" alt="" /></div>
-              <div class="col-lg-10">
-              <h1><span>"</span>TakeDoc is the most incredible app out there! Lorem ipsum dolor amet, consectetur adipiscing 
-              elit. Aenean leo lectus sollicitudin convallis quis eget libero. Sed non risus eget dolor.</h1>
-              <p><span><a href="#">John Doe</a></span> / Web Developer</p>
-              </div>
-            </li>
-            <li>
-              <div class="col-lg-2"><img src="images/testimonialImage.png" alt="" /></div>
-              <div class="col-lg-10">
-              <h1><span>"</span>TakeDoc is the most incredible app out there! Lorem ipsum dolor amet, consectetur adipiscing 
-              elit. Aenean leo lectus sollicitudin convallis quis eget libero. Sed non risus eget dolor.</h1>
-              <p><span><a href="#">John Anderson</a></span> / Web Designer</p>
-              </div>
-            </li>
-            <li>
-              <div class="col-lg-2"><img src="images/testimonialImage.png" alt="" /></div>
-              <div class="col-lg-10">
-              <h1><span>"</span>TakeDoc is the most incredible app out there! Lorem ipsum dolor amet, consectetur adipiscing 
-              elit. Aenean leo lectus sollicitudin convallis quis eget libero. Sed non risus eget dolor.</h1>
-              <p><span><a href="#">Peter Parker</a></span> / Web Designer</p>
-              </div>
-            </li>
-          </ul>
-        </div><!-- END Row -->
-      </div><!-- END Container -->
-    </section>--><!-- END Testimonials -->
+    </section>
 
     <!-- Start faq-->
     <section id="faq">
@@ -520,11 +512,9 @@
     <section id="contact">
       <a class="anchor" id="contactAnchor"></a>
       <div class="container">
-        <div class="row"><div class="col-lg-12"><h3>Contactez-nous</h3></div></div>
-        <div class="row">
+        <div class="row"><div class="col-lg-12"><h3>Contactez-nous : contact@takedoc.fr</h3><div>&#160;</div><div>&#160;</div></div></div>
+        <!--<div class="row">
           <div class="col-lg-8 col-lg-offset-2">
-            <!--<p>Lorem ipsum dolor amet, consectetur adipiscing elit. Aenean leo lectus sollicitudin convallis quis.</p>-->
-            <!-- Start contact form -->
             <form id="contactForm" method="post" action="http://www.takedoc.fr/mailer/mailer.php">
 
               <label style="display:none;" class="screen-reader-text">Nom</label>
@@ -543,8 +533,7 @@
 			  <input type="hidden" name="submitted" id="submitted" value="true" />
 
             </form>
-            <!-- END Contact form -->
-          </div>
+          </div>-->
         </div><!-- END Row -->
       </div><!-- END Container -->
     </section><!-- END Contact -->
