@@ -583,7 +583,6 @@ En tout état de cause, les informations contenues sur ce site sont des informat
 Conformément aux articles 39 et suivants de la loi n° 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés, 
 toute personne peut obtenir communication et, le cas échéant, rectification ou suppression des informations la concernant, en s’adressant à 
 TAKEDOC – contact@takedoc.fr.<br/>
-Le traitement des informations nominatives a fait l’objet d’une déclaration auprès de la CNIL sous le n°1357378.<br/>
 Les informations recueillies par le biais des formulaires ne seront pas divulguées à des personnes autres que celles composants notre société.<br/>
 Certaines des informations de ces formulaires sont facultatives, d’autres obligatoires et clairement indiquées comme telles afin que vos réponses soient 
 suffisantes pour nous permettre de traiter l’information.<br/><br/>
